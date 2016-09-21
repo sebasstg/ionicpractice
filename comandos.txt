@@ -1,0 +1,8 @@
+-- Setting up the Ionic Framework
+npm install cordova ionic -g
+ionic start conFusion sidemenu
+ionic serve --lab
+
+-- json-server
+npm install json-server -g
+
