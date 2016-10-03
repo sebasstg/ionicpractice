@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('conFusion.services', ['ngResource'])
-  .constant("baseURL", "http://localhost:3000/")
+  .constant("baseURL", "http://192.168.1.103:3000/")
   .factory('menuFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
     /*
      var promotions = [
@@ -52,7 +52,7 @@ angular.module('conFusion.services', ['ngResource'])
 
   .factory('favoriteFactory', ['$resource', 'baseURL','$localStorage', function ($resource, baseURL,$localStorage) {
     var favFac = {};
-   
+
     console.log("inicio")
 // cargo
 

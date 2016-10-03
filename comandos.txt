@@ -7,3 +7,65 @@ ionic serve --lab
 npm install json-server -g
 json-server --watch 
 
+
+
+-- buildng app
+
+ionic platform add android
+Next, add the Android platform to your app by typing the following at the prompt:
+
+
+1
+     ionic platform add android
+Then, build the app for the Android platform as follows:
+
+
+1
+     ionic build android
+Finally, you can deploy the app to the Android emulator by typing the following at the prompt:
+
+
+1
+     ionic emulate android
+This will start your default Android emulator and deploy the app to the emulator, and run the app.
+f you happen to have an Android device and are willing to use it for development, then configure the device to allow development on the device. The exact procedure depends on the manufacturer and model of the device. Check for these instructions either within your device manual, or online.
+Connect your Android device to the computer. Then, at the command prompt, type the following:
+
+
+1
+
+ionic build android
+     ionic run android
+
+	 
+	 
+	 ---
+	 
+cordova
+
+
+------
+
+     ionic resources
+
+	     <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+		 
+		      bower install ngCordova --save
+			  
+			  ionic run android
+		
+
+Adding the Cordova Plugins
+
+First, add the Cordova plugin for the local notifications by typing the following at the command prompt:
+
+
+1
+     ionic plugin add de.appplant.cordova.plugin.local-notification
+Then, install the Cordova Toast plugin by typing the following at the prompt:
+
+
+1
+     ionic plugin add https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin
+       .git
+Updating MenuControlle		
